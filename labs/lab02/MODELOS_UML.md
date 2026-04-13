@@ -1,7 +1,7 @@
 # Laboratório 02 — Modelos UML (casos de uso e classes)
 
 Documento com diagramas em **Mermaid**. 
-[mermaid.live](https://mermaid.live) ou usar extensões do VS Code/Cursor para exportar PNG/PDF.
+[mermaid.live](https://mermaid.live) ou usar extensões do VS Code para exportar PNG/PDF.
 
 ---
 
@@ -31,14 +31,18 @@ flowchart LR
   UC8 -->|quando total = 100%| UC11[Mover tarefa para concluídas]
 ```
 
+
+
 **Resumo dos casos de uso**
 
-| Caso de uso | Descrição breve |
-|-------------|-----------------|
-| Cadastrar / alterar / excluir tarefa | Prioridade (real), nome, data limite (se houver), detalhamento. |
-| Gerenciar itens de execução | Percentual, descrição, data da execução (quando concluído). |
-| Atualizar conclusão | Recalcular percentual; ao atingir 100%, mover para lista de concluídas. |
-| Listar ativas / concluídas; excluir concluída | Conforme especificação do laboratório. |
+
+| Caso de uso                                   | Descrição breve                                                         |
+| --------------------------------------------- | ----------------------------------------------------------------------- |
+| Cadastrar / alterar / excluir tarefa          | Prioridade (real), nome, data limite (se houver), detalhamento.         |
+| Gerenciar itens de execução                   | Percentual, descrição, data da execução (quando concluído).             |
+| Atualizar conclusão                           | Recalcular percentual; ao atingir 100%, mover para lista de concluídas. |
+| Listar ativas / concluídas; excluir concluída | Conforme especificação do laboratório.                                  |
+
 
 ### Diagrama de classes
 
@@ -80,6 +84,9 @@ classDiagram
   AplicacaoControleTarefas ..> ListaTarefasAtivas
   AplicacaoControleTarefas ..> ListaTarefasConcluidas
 ```
+
+
+
 ---
 
 ## Exercício 02 — Festas infantis
@@ -105,6 +112,8 @@ flowchart LR
   UC6 -.->|usa| UC3
   UC9 -.->|estende| UC6
 ```
+
+
 
 ### Diagrama de classes
 
@@ -147,6 +156,9 @@ classDiagram
   TemaFesta "1" o-- "1..*" ItemTema : compostoPor
   Aluguel "1" --> "1" Endereco : local
 ```
+
+
+
 ---
 
 ## Exercício 03 — Cursos de aperfeiçoamento
@@ -170,6 +182,8 @@ flowchart LR
   UC6 -.->|inclui| UC4
   UC6 -.->|inclui| UC5
 ```
+
+
 
 ### Diagrama de classes
 
@@ -214,4 +228,8 @@ classDiagram
   Turma "1" o-- "0..*" Matricula
   Aluno "1" o-- "0..*" Matricula
 ```
+
+
+
 ---
+
