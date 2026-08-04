@@ -108,3 +108,6 @@ CMakeLists.txt.user*
 *.dll
 *.exe
 
+
+# Binários compilados dos labs
+labs/*/*/main
